@@ -1,0 +1,899 @@
+
+@font-face {
+    font-family: Assignment3Font;
+    src: url('/font/borisna/Borisna.ttf') format('truetype')
+}
+
+* {
+    margin: 0%;
+    font-family: Assignment3Font;
+
+}
+
+.container {
+    display: grid;
+    height: 110rem;
+    width: 100%;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 10% 15% 15% 10% 40% 10%;
+    background-color: peachpuff;
+
+}
+#header {
+    background-color: peachpuff;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+}
+
+
+
+#logo {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 10%;
+    height: auto;
+    border-radius: 40px;
+    border-style: groove;
+    border-color: black;
+}
+
+#middle {
+    position: relative;
+    background-color: peachpuff;
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 4;
+}
+
+.video {
+    position: absolute;
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 2;
+    width: 100%; 
+    background-size: cover;
+}
+
+.heading {    
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: 1s ease;
+    margin-top: 2%;
+    padding: 2%;
+    font-size: 20pt;
+    width: 85%;
+}
+
+.p2 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    opacity: 0;
+    transition: .5s ease;
+    margin-top: 13%;
+    padding: 2%;
+    font-size: 17pt;
+    width: 95%;
+
+}
+
+
+
+#middle:hover .heading {
+    opacity: 1;
+  }
+
+
+#middle:hover .p2 {
+    opacity: 1;
+  }
+
+
+
+#nav {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 20%;
+    font-size: 16pt;
+    background-color: peachpuff;
+
+}
+
+.insta_logo, .coffee_logo, .about_logo, .contact_logo, .beans_logo {
+    width: 15%;
+}
+
+.fb_logo, .x_logo {
+    width: 20%;
+    margin-top: 5%;
+}
+
+.coffee1 {
+    margin-top: 1%;
+}
+
+.fb {
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14pt;
+    padding: 4% 4%;
+    margin-left: 9%;
+    background-color: indianred;
+    color: white;
+    border-radius: 7pt;
+    width: 70%;
+    height: 230%;
+    border-style: groove;
+    border-color: black;
+}
+.n1, .n2 {
+    color: black;
+}
+
+a.nav_1, a.nav_2, a.nav_3, a.nav_4, a.nav_5 {
+    background-color: indianred;
+    color: white;
+    padding: 3% 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10pt;
+    border-style: groove;
+    border-color: black;
+    margin-bottom: 30%;
+}
+
+a.nav_2:link, a.nav_2:visited {
+    padding: 3% 5%;
+    border-radius: 8pt;
+    margin-bottom: 30%;
+}
+
+
+a.nav_1:hover, a.nav_2:hover, a.nav_3:hover, a.nav_4:hover, a.nav_5:hover {
+    font-size: 14pt;
+}
+
+a.nav_3:link, a.nav_3:link {
+    padding: 3% 6%;
+    margin-bottom: 30%;
+}
+
+#img_nav {
+    position: absolute;
+    width: 100%;
+    grid-row: 3 / span 4;
+    grid-column: 2;
+    text-align: center;
+    background-color: indianred;
+    height: 3%;
+    margin-top: 55%;
+    border-radius: 8pt;
+    border-style: groove;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+
+}
+
+.beans, .appliances, .essentials, .accessories, .beans1 {
+    display: block;
+}
+
+.beans:link, .beans:visited, .essentials:link, .essentials:visited, .appliances:link, .appliances:visited, 
+.accessories:visited, .accessories:link{
+    background-color: indianred;
+    color: black;
+    font-size: 17pt;
+    width: 40%;
+
+  }
+
+  .beans1:link, .beans1:visited {
+    margin-top: 5%;
+    color: indianred;
+    font-size: 15pt;
+  }
+  
+  .beans:hover, .beans:active, .appliances:hover, .appliances:active, .essentials:hover, .appliances:active, 
+  .accessories:hover, .accessories:active {
+    background-color: indianred;
+    color: white;
+    font-size: 19pt;
+  }
+
+#bottom_middle {
+    display: grid;
+    background-color: peachpuff;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 12pt;
+    width: 90%;
+    height: 90%;
+
+}
+
+.best_cafe, .best_esp, .best_mach, .best_gri {
+    font-size: 16pt;
+    color: indianred;
+}
+
+.f1, .f2, .f3, .f4 {
+    margin-top: 10%;
+}
+
+.dir_0, .dir_1, .dir_2, .dir_3 {
+    background-color: peachpuff;
+    color: black;
+    border: 2px solid indianred;
+    text-align: center;
+    text-decoration: none;
+    height: 6%;
+    padding-top: 5%;
+    width: 45%;
+    justify-self: center;
+    margin-top: 5%;
+    border-radius: 10pt;
+    
+}
+
+.best_cafe:hover, .best_cafe:active, .best_esp:hover, .best_esp:active, .best_mach:hover, .best_mach:active, .best_gri:hover {
+    background-color: white;
+    color: indianred;
+
+  }
+
+  .zero_img {
+    margin-top: 50%;
+    width: 140%;
+    height: auto;
+}
+
+.first_img {
+    margin-top: 40%;
+    width: 86%;
+    height: auto;
+}
+
+.sec_img {
+    margin-top: 40%;
+    width: 115%;
+    height: auto;
+}
+
+.third_img {
+    margin-top: 40%;
+    justify-self: center;
+    width: 85%;
+    height: auto;
+}
+
+figcaption {
+    text-align: left;
+    margin-top: 10%;
+    line-height: 15pt;
+}
+
+#content-img {
+    display: flex;
+    float: left;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#subscribe {
+    display: grid;
+    grid-row: 4 / 5;
+    grid-column: 2;
+    font-size: 20pt;
+    line-height: 50pt;
+    margin-top: 60%;
+}
+
+.heading_email {
+    display: block;
+    margin-right: 2%;
+    
+}
+
+.cuppa {
+    width: 3%;
+    height: auto;
+    padding-right: 2%;
+}
+
+
+input {
+    width: 20%;
+    padding: 1%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid indianred;
+    transition: width 0.4s ease-in-out;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    line-height: 10%;
+  }
+
+input:focus {
+    width: 34%;
+  }
+
+.res_background {
+    display: none;
+    background-color: peachpuff;
+
+}
+
+.coffee-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    font-size: 14px;
+    grid-template-columns: repeat(4, 1fr); /* 5 equal-width columns */
+    gap: 20px;
+}
+
+.coffee-list1 {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    font-size: 12px;
+    grid-template-columns: repeat(3, 1fr); /* 5 equal-width columns */
+    gap: 5px;
+}
+
+.coffee-item {
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.coffee-item h3 {
+    margin: 0;
+}
+
+
+.attributes {
+    display: grid;
+    grid-template-columns: repeat(4, 5fr); /* Three equal-width columns */
+    gap: 10px;
+}
+
+#footer {
+    background-color: peachpuff;
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 6;
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+
+.footer_text {
+    text-align: left;
+    margin-top: 1%;
+    margin-left: 3%;
+    font-size: 13pt;
+    bottom: 0%;
+    position: fixed;
+
+
+}
+
+.t1 {
+    position: relative;
+    width: 2%;
+    height: 1%;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    background-color: peachpuff;
+
+}
+
+.fb2 {
+    width: 3.2%;
+    bottom: 1.5%;
+    right: 6%;
+    position: fixed;
+
+}
+
+.x2 {
+    width: 4.5%;
+    margin-top: 1%;
+    bottom: 2.1%;
+    right: 2%;
+    position: fixed;
+
+}
+
+
+@media only screen and (max-width : 1280px) and (min-width : 700px) {
+
+    .container {
+        display: grid; 
+        width: 100%;
+        height: 110rem;
+        grid-template-columns: 25% 15% 15% 15% 15%;
+        grid-template-rows: 10% 60% 10% 10%;
+    }
+
+    .coffee-list {
+        list-style-type: none;
+        padding: 0;
+        display: grid;
+        font-size: 12px;
+        grid-template-columns: repeat(3, 1fr); /* 5 equal-width columns */
+        gap: 5px;
+    }
+
+    .coffee-list1 {
+        list-style-type: none;
+        padding: 0;
+        display: grid;
+        font-size: 12px;
+        grid-template-columns: repeat(4, 1fr); /* 5 equal-width columns */
+        gap: 5px;
+    }
+    
+    .coffee-item {
+        border: 1px solid #ccc;
+        padding: 1px;
+        box-sizing: border-box;
+    }
+    
+    .coffee-item h3 {
+        margin: 0;
+    }
+    
+    
+    .attributes {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* Three equal-width columns */
+        gap: 5px;
+    }
+
+    #header {
+        grid-row: 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #nav {
+        display: flex;
+        grid-row: 1 / span 2;
+        grid-column: 2 / span 6;
+        justify-items: center;
+        font-size: 9pt;
+        width: 100%;
+        margin-top: 10%;
+
+    }
+
+    .insta_logo, .coffee_logo, .about_logo, .contact_logo, .beans_logo {
+        width: 40%;
+        justify-self: center;
+        display: flex;
+    }
+
+    #logo {
+        width: 60%;
+        display: flex;
+        justify-self: center;
+        margin-top: 5%;
+    }
+
+    a.nav_1, a.nav_2, a.nav_3, a.nav_4, a.nav_5 {
+        width: 60%;
+    }
+
+    #middle {
+        display: grid;
+        grid-row: 2 / span 3;
+        grid-column: 1 / span 6;
+        margin-top: 5%;
+    }
+
+    .video {
+        position: absolute;
+        grid-row: 2 / span 3;
+        grid-column: 1 / span 5;
+        width: 108%; 
+        background-size: cover;
+    }
+    
+    #img_nav {
+        position: absolute;
+        width: 108%;
+        grid-row: 2 / span 3;
+        margin-top: 59%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .beans, .appliances, .essentials, .accessories {
+        display: block;
+
+    }
+
+    #subscribe {
+        display: grid;
+        grid-row: 2 / span 3;
+        grid-column: 2 / span 5;
+        font-size: 20pt;
+        line-height: 50pt;
+        margin-top: 60%;
+        text-align: center;
+    }
+    
+    .heading_email {
+        display: block;
+        margin-right: 2%;
+        margin-top: 10%;
+        font-size: 15pt;
+        text-align: center;
+
+    }
+    
+    .cuppa {
+        width: 3%;
+        height: auto;
+        padding-right: 2%;
+    }
+    
+    
+    input {
+        width: 20%;
+        padding: 1%;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid indianred;
+        transition: width 0.4s ease-in-out;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        line-height: 3%;
+      }
+    
+
+
+    #bottom_middle {
+        display: grid;
+        grid-column: 1 / span 3;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 5%;
+        width: 100%;
+    
+    }
+    .zero_img {
+        margin-top: 55%;
+        width: 120%;
+    }
+    
+    .first_img {
+        width: 90%;
+        margin-top: 30%;
+    }
+    
+    .sec_img {
+        margin-top: 30%;
+        width: 100%;
+    }
+    
+    .third_img {
+        margin-top: 25%;
+        width: 75%;
+    }
+    
+    .dir_0, .dir_1, .dir_2, .dir_3 {
+        font-size: 14pt;
+        height: 5%;
+        width: 60%;
+        
+    }
+    
+    .f1, .f2, .f3, .f4 {
+        width: 150%;
+    }
+
+  
+    #footer {
+        background-color: peachpuff;
+        grid-column: 1 / span 6;
+        grid-row: 6;
+        margin-top: 7%;
+        margin-bottom: 10%;
+    }
+    
+    .footer_text {
+        text-align: left;
+        margin-top: 1%;
+        margin-left: 3%;
+        font-size: 13pt;
+        bottom: 0%;
+        position: fixed;
+    
+    
+    }
+    
+    #dancing_beans {
+        text-align: center;
+        margin-left: 3%;
+    }
+
+    .t1 {
+        display: none;
+        width: 3%;
+        height: 2%;
+        background-color: peachpuff;
+    
+    }
+
+.fb2 {
+    width: 3%;
+    right: 5.7%;
+    bottom: 1.6%;
+
+}
+
+.x2 {
+    width: 4.9%;
+    right: 1%;
+    bottom: 1.6%;
+    position: fixed;
+}
+    .fb {
+        display: none;
+    }
+}
+
+.insta2 {
+    width: 3.4%;
+    right: 9.6%;
+    bottom: 1.5%;
+    position: fixed;
+}
+
+
+@media only screen and (max-width : 700px) {
+
+body {
+    background-color: peachpuff;
+}
+
+.container {
+    font-size: 1em;
+    display: grid;
+    height: 180rem;
+    width: 100%;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 5% 60% 10%;
+    }
+
+#header {
+    display: grid;
+    grid-column: 1 / 5;
+    grid-row: 1 / span 2;
+}
+
+#logo {
+    width: 25%;
+    grid-row: 2 / span 2;
+    display: flex;  
+    justify-self: center;
+}
+
+#nav {
+    display: flex;
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 3;
+    font-size: 10pt;
+    margin-top: 2%;
+    align-items: stretch;
+    justify-self: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 15%;
+}
+
+a.nav_1, a.nav_3, a.nav_4, a.nav_2, a.nav_5{
+    background-color: indianred;
+    color: white;
+    padding: 12% 12%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7pt;
+    border-style: groove;
+    border-color: black;
+    width: 100%;
+    height: 17%;
+    display: block;
+    flex: 0 1 auto;
+    justify-self: center;
+}
+
+a.nav_4 {
+    padding: 30%;
+}
+
+a.nav_5 {
+    padding: 18%;
+}
+a.nav_2:link, a.nav_2:visited {
+    padding: 31% 19%;
+    width: 100%;
+    height: 17%;
+    border-radius: 8pt;
+    grid-row: 2;
+}
+
+
+a.nav_1:hover, a.nav_2:hover, a.nav_3:hover, a.nav_4:hover, a.nav_5:hover {
+    font-size: 11pt;
+}
+
+a.nav_3:link, a.nav_3:link {
+    padding: 21% 13%;
+}
+
+.insta_logo, .coffee_logo, .about_logo, .contact_logo, .beans_logo {
+    display:none;
+}
+
+#middle {
+    display: grid;
+    grid-row: 2 / span 3;
+    grid-column: 1 / span 3;
+    background-color: peachpuff;
+    row-gap: 0;
+
+
+}
+
+.heading {
+    font-size: 12pt;
+}
+
+.video {
+    position: absolute;
+    grid-column: 1 / span 3;
+    width: 100%;
+}
+
+
+.beans:link, .beans:visited, .essentials:link, .essentials:visited, .appliances:link, .appliances:visited, 
+.accessories:link, .accessories:visited {
+    background-color: indianred;
+    color: black;
+    font-size: 12pt;
+  }
+  
+  .beans:hover, .beans:active, .appliances:hover, .appliances:active, .essentials:hover, .appliances:active,
+  .accessories:active, .accessories:hover {
+    background-color: indianred;
+    color: white;
+    font-size: 14pt;
+
+  }
+
+
+  #img_nav {
+    position: absolute;
+    width: 100%;
+    grid-row: 2 / span 3;
+    margin-top: 56%;
+    display: flex;
+    justify-content: center;
+    height: 1%;
+
+}
+
+.beans, .appliances, .essentials, .accessories {
+    display: block;
+
+}
+
+#subscribe {
+    display: grid;
+    grid-row: 2 / span 3;
+    grid-column: 2 / span 4;
+    font-size: 20pt;
+    margin-top: 70%;
+    text-align: center;
+    line-height: 30pt;
+    margin-left: 10%;
+}
+
+.heading_email {
+    position: absolute;
+    display: block;
+    margin-right: 2%;
+    font-size: 15pt;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.cuppa {
+    width: 3%;
+    height: auto;
+    padding-right: 2%;
+}
+
+
+input {
+    width: 20%;
+    padding: 2%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid indianred;
+    transition: width 0.4s ease-in-out;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    line-height: 3%;
+  }
+
+#bottom_middle {
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    grid-template-columns: 100%;
+    margin-left: 5%;
+    margin-top: 96%;
+    background-color: peachpuff;
+    
+}
+.zero_img {
+    margin-top: 10%;
+    width: 90%;
+}
+
+.first_img {
+    width: 65%;
+    margin-top: 15%;
+}
+
+.sec_img {
+    margin-top: 15%;
+    width: 80%;
+}
+
+.third_img {
+    margin-top: 15%;
+    width: 70%;
+}
+
+.dir_0, .dir_1, .dir_2, .dir_3 {
+    font-size: 14pt;
+    
+}
+
+.f1, .f2, .f3, .f4 {
+    width: 150%;
+}
+
+.fb2 {
+    width: 3.7%;
+    bottom: 0.8%;
+    right: 7%;
+}
+
+.x2 {
+    width: 5%;
+    bottom: 1%;
+}
+.insta2 {
+    width: 3.7%;
+    right: 11.8%;
+    bottom: 0.8%;
+}
+
+
+.res_background, .fb, .t1, .p2 {
+    display: none;
+    background-size: cover;
+}
+}
+
+
